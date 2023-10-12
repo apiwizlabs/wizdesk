@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        html {
+            display: table;
+            margin: auto;
+        }
+
+        body {
+            font-size: 14px;
+        }
+
+        div.template {
+            padding: 40px;
+            background: #eff0f5;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        table {
+            font-size: 14px;
+            line-height: 20px;
+            background-color: #fff;
+            padding: 0px 38px 59px 24px;
+            width: 100%;
+            height: 100%;
+            border-spacing: 10px;
+            border-collapse: separate;
+            margin: 20px;
+        }
+
+        #Table_01 {
+            margin: 0 auto;
+
+        }
+
+        .font20 {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .font700 {
+            font-weight: 700 !important;
+        }
+
+        .font12 {
+            font-size: 12px;
+        }
+
+        .font18 {
+            font-size: 18px;
+        }
+
+        .begreaterLink {
+            color: #007be3;
+            display: inline-block;
+        }
+
+
+        .col-md-5 {
+            flex: "0 0 41.666667%";
+            max-width: 500px;
+            background-color: red;
+        }
+
+        .entry-points {
+            padding: 60px 50px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button {
+            padding: 9px 23px;
+            background-color: #0074fb;
+            /* Green */
+            border: none;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        .button:focus {
+            outline: none;
+            border: none;
+        }
+
+        td {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h6 {
+            margin: 54px 0px 0px 0px;
+        }
+
+        h1 {
+            margin: 23px 0px 22px 0px;
+            text-align: center;
+            overflow-wrap: break-word;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.1;
+        }
+
+        p {
+            margin: 13px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        tr {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <title>Ticket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body style="font-size: 14px; font-weight: 500;">
+
+    <div class="template">
+        <table id='Table_01'>
+            <tbody>
+                <tr>
+                    <td>
+                        <p><%= ticketContent %> - "<%= ticketName %>" has been updated.</p> 
+                        <br />
+                        <p>The update was done by <%= ticketChanger %> from <%= orgName %></p>
+                        <p>To view the ticket please click on the button below.</p>
+                        <p>Please do not reply to this email.</p>
+                    </td>
+                </tr>
+                    <td>
+
+                        <a class="button" href="<%= ticketLink %>">
+                            <button class="button ">
+                                Go To Ticket
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

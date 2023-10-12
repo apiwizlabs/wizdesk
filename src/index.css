@@ -1,0 +1,507 @@
+.header-1{
+    font-size: 20px;
+}
+
+.header-lg{
+  font-size: 27px;
+}
+
+.primary-header{
+  font-size: 25px;
+}
+
+.w-200{
+  width: 20rem !important;
+}
+
+.w-50{
+  width: 50%;
+}
+
+.profile-details-wrapper{
+  border: 1px solid rgb(218, 215, 215);
+  border-radius: 10px;
+  width: 100%;
+  height: max-content;
+  padding: 20px;
+}
+
+.d-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.org-logo-wrapper{
+  height: 30px;
+  width: 30px;
+}
+
+.password-eye{
+  right: 15px;
+  top: 44px;
+}
+
+.org-logo-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.warning-txt{
+  color: #f3bd1a;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.g-10{
+    gap: 10px;
+}
+
+.g-20{
+  gap: 20px;
+}
+.g-50{
+  gap: 50px;
+}
+
+.dropdown-btn{
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.xsm-txt{
+  font-size: 0.6rem;
+}
+
+.sm-txt{
+  font-size: 0.75rem;
+}
+
+.md-txt{
+  font-size: 0.9rem;
+}
+
+.blue-txt{
+  color: blue;
+}
+
+.title{
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.info-text{
+    width: 250px;
+}
+
+.org-card{
+    width: 23rem;
+    min-height: 11rem;
+    max-height: max-content;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.org-card:hover{
+    transition: ease-in-out 0.2s;
+    background-color: rgb(238, 239, 242) !important;
+}
+
+.loader-group {
+    gap: 0.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .edit-btn:hover{
+    color: blue;
+  }
+  .delete-btn:hover{
+    color: red;
+  }
+
+  .markdown-preview{
+    width: 100%;
+    height: 5.7rem;
+    border: solid 1px grey;
+    background-color: #e9ecef;
+    border-radius: 7px;
+    padding: 10px;
+    resize: vertical;
+    overflow: scroll;
+  }
+
+  .markdown-preview h1{
+    font-size: 1.5rem;
+  }
+  .markdown-preview h2{
+    font-size: 1.25rem;
+  }
+  .markdown-preview h3{
+    font-size: 1rem;
+  }
+  .markdown-preview h4{
+    font-size: 0.8rem;
+  }
+  .markdown-preview h5{
+    font-size: 0.6rem;
+  }
+  .markdown-preview h6{
+    font-size: 0.5rem;
+  }
+
+  .view-card {
+    width:max-content;
+    min-width: 10.5rem;
+    min-height: 5rem;
+    background-color: #0c6cfd1f;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .v-txt{
+    font-size: 0.9rem;
+  }
+
+
+
+  p{
+    margin-bottom: 0 !important;
+  }
+
+  .attachments-dropdown{
+    background-color: #f1f0f0;
+    border-radius: 7px;
+    width: 20rem;
+    z-index: 1;
+    right: 0;
+    height: max-content;
+  }
+
+  .preview-img{
+    position: fixed;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:  100vw;
+    height: 100vh;
+    object-fit: contain;
+    background-color: #0000007f;
+    cursor: auto;
+  }
+  .preview-video{
+    position: fixed;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:  100vw;
+    height: 100vh;
+    background-color: #0000007f;
+  }
+
+  .close-img{
+    position: fixed;
+    z-index: 10002;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+
+
+.view-title{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.filters-checkbox{
+  width: max-content;
+}
+
+.login-page-wrapper{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.auth-img-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e2029;
+}
+
+.login-form-wrapper{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: start;
+  width: 70%;
+}
+
+.domains-list-container{
+  top: 60px;
+  right: 18px;
+  background-color: #f8f9fa;
+  padding: 0 10px;
+  z-index: 1;
+  width: max-content;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.domains-list-container p{
+  padding: 7px 10px;
+  border-bottom: solid 1px black;
+}
+
+.domains-list-container p:last-child{
+  padding: 7px 10px;
+  border-bottom: solid 1px transparent;
+}
+
+.bold-700{
+  font-weight: 700;
+}
+.bold-600{
+  font-weight: 600;
+}
+.light{
+  font-weight: 300;
+  color: grey;
+}
+.primary-color-text{
+  color: #0c6dfd;
+}
+.w-80{
+  width: 80%;
+}
+.w-100{
+  width: 100%;
+}
+.google-btn{
+  width: 100%;
+}
+.line{
+  height: 5px;
+  width: 20px;
+  color: black;
+}
+
+.custom-file-upload.outline{
+  color: #0c6cfd;
+  border: 1px solid #0c6cfd;
+  background-color: white;
+  font-weight: 400;
+}
+
+.custom-file-upload{
+   color: white;
+   background-color: #0c6cfd;
+   font-weight: 500;
+   padding: 6px 10px;
+   border-radius: 6px;
+   margin-left: 15px;
+   cursor: pointer;
+   border: 1px solid #0c6cfd;
+}
+
+.link-ticket-icon-bg{
+  background-color: #e5e5e5;
+  height: 26px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+  padding: 0 6px;
+}
+
+.link-ticket-icon-bg:hover{
+  background-color: #0c6cfd68;
+}
+
+.link-ticket-icon{
+  color: black;
+}
+
+.primary-color{
+  color: #0c6cfd;
+}
+
+.sm-btn{
+  background-color: transparent;
+  border: 2px solid  #0c6dfd;
+  height: min-content;
+  border-radius: 3px;
+  padding: 0 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.user-card-wrapper{
+  border: 1px solid rgb(218, 215, 215);
+  border-radius: 10px;
+  padding: 20px;
+  width: max-content;
+}
+
+.user-card-wrapper .value{
+  font-weight: 700;
+}
+.user-card-wrapper .label{
+  font-weight: 300;
+  color: grey;
+}
+
+/* pagination css */
+
+.pagination-container {
+  display: flex;
+  list-style-type: none;
+}
+.pagination-item.dots:hover{
+  background-color: transparent;
+  cursor: default;
+}
+.pagination-container .pagination-item {
+  padding: 0 12px;
+  height: 32px;
+  text-align: center;
+  margin: auto 4px;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  letter-spacing: 0.01071em;
+  border-radius: 16px;
+  line-height: 1.43;
+  font-size: 13px;
+  min-width: 32px;
+}
+.pagination-item:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+.pagination-item.selected {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.pagination-item .arrow::before {
+  position: relative;
+  /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+  content: '';
+  /* By using an em scale, the arrows will size with the font */
+  display: inline-block;
+  width: 0.4em;
+  height: 0.4em;
+  border-right: 0.12em solid rgba(0, 0, 0, 0.87);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+}
+
+.pagination-item .arrow.left {
+  transform: rotate(-135deg) translate(-50%);
+}
+.pagination-item .arrow.right {
+  transform: rotate(45deg);
+}
+
+.pagination-item.disabled {
+  pointer-events: none;
+}
+
+.pagination-item.disabled .arrow::before {
+  border-right: 0.12em solid rgba(0, 0, 0, 0.43);
+  border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+}
+
+.pagination-item.disabled:hover {
+  background-color: transparent;
+  cursor: default;
+}
+
+.error-field{
+  border: 1px solid red !important;
+}
+
+.error-txt{
+  color: red !important;
+}
+
+.dropdown-outline .dropdown-toggle{
+  display: inline-block !important;
+  background-color: white !important;
+  color: #0c6cfd !important;
+  border: 1px solid #0c6cfd !important;
+  font-weight: 400 !important;
+}
+
+.truncate{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name{
+  max-width: 250px;
+}
+
+.icon-search{
+  background-color: #0c6cfd;
+  height: 35px;
+  color: white;
+  padding: 0 6px;
+}
+.searchbox{
+  padding-left: 28px;
+  border-radius: 6px;
+  /* border-color: #0c6dfd; */
+  border: 1px solid #dedede;
+  width: 280px;
+  height: 35px;
+
+}
+.searchicon{
+  left: 6px
+}
+
+.custom-file-upload-org{
+  font-size: 1rem;
+  background-color: transparent;
+  color: #0c6cfd;
+  height: fit-content;
+  border: 1px solid #0c6cfd;
+  padding: 5px 10px;
+  min-width:  max-content;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-file-input-org{
+  margin-left: 10px;
+  width: 330px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-file-upload-org:hover{
+  background-color: #0c6dfd;
+  color: white;
+  transition: 0.2s;
+}
+
