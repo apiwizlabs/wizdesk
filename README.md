@@ -1,3 +1,66 @@
+
+<p align="center">
+    <img src="./public/banner.png" alt="Saleswize banner" />
+    <br/>
+    <br/>
+    <b>Wizdesk: Elevate Your CRM Experience with Integration, Efficiency, and Versatility.</b>
+</p>
+
+
+[![Made with Node.js](https://img.shields.io/badge/Node.js->=14-blue?logo=node.js&logoColor=green)](https://nodejs.org "Go to Node.js homepage")
+[![Made with React](https://img.shields.io/badge/React-18-blue?logo=react&logoColor=#61DAFB)](https://reactjs.org "Go to React homepage")
+![GitHub contributors](https://img.shields.io/github/contributors/apiwizlabs/wizdesk)
+[![GitHub issues](https://img.shields.io/github/issues/apiwizlabs/wizdesk)](https://github.com/apiwizlabs/wizdesk/issues)
+[![GitHub stars](https://img.shields.io/github/stars/apiwizlabs/wizdesk)](https://github.com/apiwizlabs/wizdesk/stargazers)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/apiwizlabs/wizdesk)
+
+[![Twitter Follow](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/getapiwiz)
+[![Linkedin Follow](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/apiwizio/)
+
+[**APIwiz is proud to make Wizdesk public for Contributions**](https://www.apiwiz.io/)  
+Wizdesk is the gateway to seamlessly integrate with Jira, offering a cost-effective open-source alternative with robust issue tracking, efficient communication, and real-time notifications
+
+## 🤔 Why Wizdesk?
+
+Wizdesk stands out with its ability to seamlessly integrate with Jira, offering a cost-effective open-source alternative with robust issue tracking, efficient communication, and real-time notifications.
+
+## ✨ Features
+
+- 🎫 Raise tickets for any issue type
+- 🔄 Streamlines client-organization communication
+- 📧 Generates real-time email notifications for most events
+- 📥 Imports tickets from existing Jira workspace
+- 🌟 Open-source JIRA alternative with versatile applications, and it's free!
+
+
+
+## 🚀 Getting Started
+To getting started in local development environment, just fork the project git repository and follow the below steps:
+
+Execute the shell script `setup.sh` to automatically setup for you or follow the below steps
+
+```bash
+  git clone https://github.com/<your_github_username>/wizdesk.git
+  cd wizdesk
+  npm install
+  npm start
+```
+Navigate to `/public/config.js` and update the following variables accordingly
+1. `PUBLIC_KEY` : This is a randomly generated rsa key used for encrypting passwords, you can get one yours from https://cryptotools.net/rsagen. Paste the Public key in this config and Private Key in the Backend config
+2. `GOOGLE_OAUTH_CLIENT_ID`: This is a google oauth client id, you can get yours after [google oauth setup](https://support.google.com/cloud/answer/6158849?hl=en)
+3. `API_BASE_URL`: The Base Url where your local server should be running
+4. `BASE_URL`: The Base Url for your local UI server
+
+
+Make sure the [Server side code](./Server/) is also setup, before running `npm start`
+
+## Architecture
+
+![wizdesk architecture](./public/wizdesk-arch.png)
+
+
+
+## User Flow
 # Support and Admin Users
 
 **Who are support users?** <br>
@@ -18,8 +81,6 @@ after which you can use this password to login without using google OAuth.
 
 ### 1.2 Logout
 
-![Screenshot 2023-03-29 at 1.40.30 AM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-03-29_at_1.40.30_AM.png)
-
 1. Click on the Logout button that is present in the right end of the Navbar.
 2. You will be redirected back to the login page upon successful logout.
 
@@ -32,8 +93,6 @@ click on an organisation card to be redirected to the organisation’s respectiv
 ### 2.1 Create an Organisation
 
 1. Here, you can create a new organisation by clicking on the “Create Organisation” Button.
-    
-    ![Screenshot 2023-04-24 at 2.16.20 PM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-04-24_at_2.16.20_PM.png)
     
 
 - The **ID Key Name** field represents the word that you would see as a prefix before each tickets ID Example: if ID Key Name was “NEW” then each ticket created would have Unique Sequential ID’s such as NEW-1, NEW-2 etc.
@@ -66,8 +125,6 @@ Keep in mind that while inviting client users their email domain should be inclu
 
 1. You will see a button in the left top of the listed tickets page called “Create Ticket”
     
-    ![Screenshot 2023-04-30 at 11.47.37 PM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-04-30_at_11.47.37_PM.png)
-    
 2. After clicking on the button a form will be shown. Proceed to fill the details.  
 3. The description text Input and the comments text input support basic markdown. 
 4. Once Ticket details are filled click the “Create Ticket” Button.
@@ -84,7 +141,6 @@ Check this link out for markdown syntax help:
 2. Go to your JIRA workspace and download or export your existing JIRA tickets as an excel by selecting the “Export Excel CSV (all fields)”. 
 The steps are Filters < Advanced Issue Search < Export < Export Excel CSV (all fields)
     
-    ![Screenshot 2023-04-30 at 11.58.07 PM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-04-30_at_11.58.07_PM.png)
     
 3. If you want the attachments to get imported as well then please follow steps 4 and 5, else go to step 6.
 4.  To import attachments you need to setup an API Key using the following steps:
@@ -101,14 +157,12 @@ The steps are Filters < Advanced Issue Search < Export < Export Excel CSV (all f
     - You should store the token securely, just as for any password.
 5. Enter the API Key, email ID associated with your jira account and jira workspace domain name into this form then click on “import with attachments” button < select exported excel file. 
 
-![Screenshot 2023-04-30 at 11.47.19 PM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-04-30_at_11.47.19_PM.png)
 
 1. Incase you don’t want to import your tickets with attachments then just click on “Skip this step and Import” button then select your exported CSV file.
 2. Your designated support user/s will be notified about the imported tickets.
 
 ### 3.2 View, Update and Delete A Ticket
 
-![Screenshot 2023-03-29 at 1.27.51 AM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-03-29_at_1.27.51_AM.png)
 
 1. To ***View a ticket***, Click on a listed ticket to view all the ticket fields.
 2. To ***update a ticket***, first click on the listed ticket you wish to edit, then make the necessary changes and finally click on the "Update Ticket" button.
@@ -116,11 +170,10 @@ The steps are Filters < Advanced Issue Search < Export < Export Excel CSV (all f
 
 ### 3.3 Copy and Share a Ticket
 
-![Screenshot 2023-05-02 at 10.44.05 AM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-05-02_at_10.44.05_AM.png)
 
 1. Click on the link icon that is present in the “Actions” column of your desired ticket. If link copied then you will see a pop up toast saying the tickets link has been copied to your clipboard.
 
-                                                                                    (OR)
+    (OR)
 
 1. To copy the link of a ticket, start by clicking on the ticket whose link you want to copy. This will open the ticket modal, where you can manually copy the URL without closing the modal.
 
@@ -128,7 +181,6 @@ The steps are Filters < Advanced Issue Search < Export < Export Excel CSV (all f
 
 ### 3.4 Download All Tickets
 
-![Screenshot 2023-03-29 at 12.53.41 AM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-03-29_at_12.53.41_AM.png)
 
 1. Click on the “Download Tickets” button which is found in the tickets listing page.
 2. Once you click on the "Download Tickets" button, a CSV file containing all the ticket details will be generated and downloaded to your local system.
@@ -136,8 +188,7 @@ The steps are Filters < Advanced Issue Search < Export < Export Excel CSV (all f
 ### 3.5 Filter Tickets
 
 1. Click on the dropdown buttons then select the filters that you would like applied to the tickets. The ticket list will get filtered accordingly.
-    
-    ![Screenshot 2023-03-29 at 12.53.41 AM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-03-29_at_12.53.41_AM.png)
+
     
 
 ### 3.6 Custom Views
@@ -156,13 +207,11 @@ these are custom filters that get applied according to a preselected set of filt
 ### 5.1 Lock Users - Admin Only
 
 1. locking a user means that the locked user will not be able to login or perform any actions unless unlocked.
-    
-    ![Screenshot 2023-05-02 at 10.28.44 AM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-05-02_at_10.28.44_AM.png)
+
     
 2. To lock a user you need click on the Manage Users button which is present in the organisations dashboard then click on the “Lock User” button present on the user’s card.
 3. Perform the same steps to unlock a user.
-    
-    ![Screenshot 2023-05-02 at 10.45.17 AM.png](Support%20and%20Admin%20Users%207653c9decb5c42f4bcd9b9fad955046b/Screenshot_2023-05-02_at_10.45.17_AM.png)
+
     
 
 ### 5.2 View Invite Details
@@ -171,3 +220,28 @@ these are custom filters that get applied according to a preselected set of filt
 2. You can view the email of the person who was invited, if the invitee has successfully signed up or not, organisation of the invitee and the email of the person who invited them
 
 ***NOTE: Kindly note that our APIwiz support team is available to assist you with any issues or queries that may arise while using our documentation. Please do not hesitate to contact us if you require any further assistance beyond what is provided in the documentation. We are more than happy to help you.***
+
+
+## Community Support
+
+For general help using Wizdesk, refer to the below discussion
+- [Github](https://github.com/apiwizlabs/wizdesk/discussions) - For bug reports, help, feature requests
+
+
+## Contributing
+All code contributions, including those of people having commit access, must go through a pull request and be approved by a maintaner before being merged. This is to ensure a proper review of all the code.
+
+Kindly read our [Contributing Guide](./CONTRIBUTING.md) to familiarize yourself with Wizdesk's development process, how to suggest bug fixes and improvements, and the steps for building and testing your changes.
+
+## Security
+
+For security issues, kindly email us at security@apiwiz.com instead of posting a public issue on Github
+
+## Follow Us
+Join our growing community! Checkout out our official [Blog](https://www.apiwiz.io/resources/blogs). Follow us on [Twitter](https://twitter.com/getapiwiz), [Linkedin](https://www.linkedin.com/company/apiwizio/)
+
+
+## Thanks to all Contributors 🙏🏼
+<a href="https://github.com/apiwizlabs/wizdesk/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=apiwizlabs/wizdesk&max=400&columns=20" />
+<a>
