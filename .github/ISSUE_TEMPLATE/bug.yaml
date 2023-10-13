@@ -1,0 +1,47 @@
+name: '🐛 Bug Report'
+description: 'Submit a bug report to help us improve. '
+title: '🐛 Bug Report: '
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out our bug report form 🙏
+  - type: textarea
+    attributes:
+      label: 🚶🏻Reproduction Steps
+      description: How do you encounter this bug? Please walk us through it
+      placeholder: So when I...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 👍🏻 Expected Behavior
+      description: What according to you is the expected scenario
+      placeholder: It should be like...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 👎🏻 Actual Behavior
+      description: What did actually happen? Attach screenshots/videos
+      placeholder: It actually...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 🖥️ Your Environment
+      description: What's the version of packages you are using and/or operating system
+  - type: checkboxes
+    attributes:
+      label: 👀 Have you spent some time to check if this issue has been raised before?
+      options:
+        - label: I have checked, and there is no such similar issue found
+          required: true
+  - type: checkboxes
+    attributes:
+      label: 👀 Have you read the Code of Conduct?
+      options:
+        - label: I have read the [Code of Conduct](https://github.com/apiwizlabs/saleswiz/blob/main/CODE_OF_CONDUCT.md)
+          required: true
