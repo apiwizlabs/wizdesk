@@ -63,12 +63,12 @@ Navigate to the `./config.js` and update the following variables accordingly
     RESET_EXPIRY: "300000", // reset password link expiry 5mins,
     MAIL_HOST:"smtp.gmail.com",
     MAIL_PORT:"587",
-    MAIL_USER:"<mail id used to generate below password>",
-    MAIL_PASSWORD:"<generated email password>",
-    MAIL_FROM:"<same as MAIL USER>",
+    MAIL_USER:"< Mail id used to generate below password >",
+    MAIL_PASSWORD:"< generated email password (refer to 4th point) >",
+    MAIL_FROM:"< Same as MAIL USER >",
     BASE_URL: "http://localhost:3000/"
-    ADMIN_EMAIL: "<dummy admin email of your choice>",
-    ADMIN_PASSWORD: "<admin email password string of your choice>",
+    ADMIN_EMAIL: "< Dummy admin email of your choice >",
+    ADMIN_PASSWORD: "< admin email password string of your choice >",
 }
 ```
 
