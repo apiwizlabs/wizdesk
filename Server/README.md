@@ -27,6 +27,55 @@ This is the backend code for [Wizdesk](../), <- Click here to go to UI setup
 ### ✨ PreRequisites
 
 
+1. You will need to setup a private aws bucket.
+    - save the access key, secret key, region names and bucket names. these need to be updated in the config and env as given in the following sections.
+2. Generate a RSA public and private key pair using this [website](https://cryptotools.net/rsagen).
+3. Enable google oauth for your dns/localhost url. here are the [docs](https://support.google.com/cloud/answer/6158849?hl=en)
+4. Enable an existing/new gmail to be used with nodemailer to send email alerts and invites. follow this [blog](https://miracleio.me/snippets/use-gmail-with-nodemailer).
+    - the password generated after following the blog will be referred to as "generated email password"
+5. Generate a string of your choice to be used as a JWT Secret.   
+6. Create a mongodb database and replace the url in the place of <mongo_db_url>
+
+Create a .env file and update the following variables accordingly.
+
+```javascript
+PRIVATE_KEY: "< place the generated RSA private key here ( refer to the 2nd point ) >"
+JWT_SECRET: "< place a randomly generated string (refer to the 5th point above)  >"
+AWS_ACCESSKEY: "< place the AWS Access Key ( refer to the 1st point above ) >"
+AWS_SECRET_KEY: "< place the AWS Secret Key ( refer to the 1st point above ) >"
+GOOGLE_CLIENT_ID: "< place the Google Client Id ( refer to the 3rd point above ) >"
+
+```
+
+Navigate to the `./config.js` and update the following variables accordingly
+
+```javascript
+{
+    DB_URL: "< place your mongo db url (refer to the 6th point above) >",
+    NODE_ENV: "development",
+    PORT: 3002,
+    
+    AWS_BUCKET_NAME: "<place aws bucket name ( refer to the 1st point above )>",
+    AWS_REGION: "<place aws bucket region ( refer to the 1st point above )>",
+     
+    TOKEN_EXPIRY: "24h", // expiry time for login token
+    INVITE_EXPIRY: "1h", // invite link expiry
+    RESET_EXPIRY: "300000", // reset password link expiry 5mins,
+    MAIL_HOST:"smtp.gmail.com",
+    MAIL_PORT:"587",
+    MAIL_USER:"<mail id used to generate below password>",
+    MAIL_PASSWORD:"<generated email password>",
+    MAIL_FROM:"<same as MAIL USER>",
+    BASE_URL: "http://localhost:3000/"
+    ADMIN_EMAIL: "<dummy admin email of your choice>",
+    ADMIN_PASSWORD: "<admin email password string of your choice>",
+}
+```
+
+This should start the server, database and populate dummy data in the database to get started.
+
+
+
 
 ## Community Support
 
