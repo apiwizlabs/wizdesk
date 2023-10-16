@@ -54,7 +54,7 @@ Navigate to `/public/config.js` and update the following variables accordingly
 
 Make sure the [Server side code](./Server/) is also setup, before running `npm start`
 
-## Architecture
+## Sequence Diagram
 
 ![wizdesk architecture](./public/wizdesk-arch.png)
 
