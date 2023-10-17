@@ -7,3 +7,6 @@
 .DS_Store
 
 /Server/logs
+
+package-lock.json
+Server/package-lock.json
