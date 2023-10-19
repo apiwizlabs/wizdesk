@@ -56,7 +56,7 @@ Make sure the [Server side code](./Server/) is also setup, before running `npm s
 
 ## Sequence Diagram
 
-![wizdesk architecture](./public/wizdesk-arch.png)
+![wizdesk architecture](./github-assets/wizdesk-seq.png)
 
 
 
