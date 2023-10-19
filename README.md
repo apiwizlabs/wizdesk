@@ -60,8 +60,9 @@ Make sure the [Server side code](./Server/) is also setup, before running `npm s
 
 
 
-## User Flow
-# Support and Admin Users
+## How does Wizdesk work? 
+
+### Support and Admin Users
 
 **Who are support users?** <br>
 These are users who solve or deal with customer bugs, issues etc. 
@@ -71,26 +72,26 @@ These are users who solve or deal with customer bugs, issues etc.
 - They get notified when a customer creates a ticket or imports tickets.
 - They also get notified when anyone comments or changes the status of a ticket that is assigned to them.
 
-## 1. **Authentication**
+### 1. **Authentication**
 
-### 1.1 Sign Up and Log In
+#### 1.1 Sign Up and Log In
 
 1. Using google OAuth you can both signup and login at the same time i.e if you are a first time user you will be both signed up and logged in if not then you will be logged in.
 2. Incase you want to be able to login without google OAuth then you can use the reset password option and create a password for yourself. 
 after which you can use this password to login without using google OAuth.
 
-### 1.2 Logout
+#### 1.2 Logout
 
 1. Click on the Logout button that is present in the right end of the Navbar.
 2. You will be redirected back to the login page upon successful logout.
 
-## 2. Organisations
+### 2. Organisations
 
 once logged in, you will be redirected to the organisations dashboard where you can see a list of organisations in a card format. 
 
 click on an organisation card to be redirected to the organisation’s respective ticket dashboard.
 
-### 2.1 Create an Organisation
+#### 2.1 Create an Organisation
 
 1. Here, you can create a new organisation by clicking on the “Create Organisation” Button.
     
@@ -109,19 +110,19 @@ Keep in mind that while inviting client users their email domain should be inclu
 - At least one support user needs to be present
 - the ID Key Name needs to be a unique word and cannot exceed 4 characters.
 
-### 2.2 Update an Organisation
+#### 2.2 Update an Organisation
 
 1. Click on the pencil icon present in the top right corder of the organisation card for updating an organisation
 
-### 2.3 Delete an Organisation - Only Admins
+#### 2.3 Delete an Organisation - Only Admins
 
 1. Click on the trash icon present on the top right corner of the organisation card then confirm if a prompt is shown.
 
  
 
-## 3. Tickets
+### 3. Tickets
 
-### 3.1 Create A Ticket
+#### 3.1 Create A Ticket
 
 1. You will see a button in the left top of the listed tickets page called “Create Ticket”
     
@@ -135,7 +136,7 @@ Check this link out for markdown syntax help:
 
 [Markdown Cheat Sheet | Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 
-### 3.2 Importing Tickets from JIRA
+#### 3.2 Importing Tickets from JIRA
 
 1. To import multiple tickets from your JIRA workspace you need to click on the Import/Export dropdown then click on the import option. 
 2. Go to your JIRA workspace and download or export your existing JIRA tickets as an excel by selecting the “Export Excel CSV (all fields)”. 
@@ -161,14 +162,14 @@ The steps are Filters < Advanced Issue Search < Export < Export Excel CSV (all f
 1. Incase you don’t want to import your tickets with attachments then just click on “Skip this step and Import” button then select your exported CSV file.
 2. Your designated support user/s will be notified about the imported tickets.
 
-### 3.2 View, Update and Delete A Ticket
+#### 3.2 View, Update and Delete A Ticket
 
 
 1. To ***View a ticket***, Click on a listed ticket to view all the ticket fields.
 2. To ***update a ticket***, first click on the listed ticket you wish to edit, then make the necessary changes and finally click on the "Update Ticket" button.
 3. To ***delete a ticket***, click on the trash icon present in the “Actions” column of each ticket.
 
-### 3.3 Copy and Share a Ticket
+#### 3.3 Copy and Share a Ticket
 
 
 1. Click on the link icon that is present in the “Actions” column of your desired ticket. If link copied then you will see a pop up toast saying the tickets link has been copied to your clipboard.
@@ -179,32 +180,32 @@ The steps are Filters < Advanced Issue Search < Export < Export Excel CSV (all f
 
 ***NOTE:*** The shorter “ID” column for all tickets can be used for better track-ability.
 
-### 3.4 Download All Tickets
+#### 3.4 Download All Tickets
 
 
 1. Click on the “Download Tickets” button which is found in the tickets listing page.
 2. Once you click on the "Download Tickets" button, a CSV file containing all the ticket details will be generated and downloaded to your local system.
 
-### 3.5 Filter Tickets
+#### 3.5 Filter Tickets
 
 1. Click on the dropdown buttons then select the filters that you would like applied to the tickets. The ticket list will get filtered accordingly.
 
     
 
-### 3.6 Custom Views
+#### 3.6 Custom Views
 
 these are custom filters that get applied according to a preselected set of filters.
 
 1. click on the Custom Views button to view your existing views. click on add a view to then create a customised view. make sure to give it a name that is relevant!
 
-## 4. Profile
+### 4. Profile
 
 1. you can view your profile by clicking on your email that is present in the top right of the Navbar
 2. you can update or add your contact details such as your mobile number or edit your name.
 
-## 5. Manage Users
+### 5. Manage Users
 
-### 5.1 Lock Users - Admin Only
+#### 5.1 Lock Users - Admin Only
 
 1. locking a user means that the locked user will not be able to login or perform any actions unless unlocked.
 
@@ -214,7 +215,7 @@ these are custom filters that get applied according to a preselected set of filt
 
     
 
-### 5.2 View Invite Details
+#### 5.2 View Invite Details
 
 1. To view the invites sent you have to click on the “Manage Users” button present in the home page then switch tab to Invited Users.
 2. You can view the email of the person who was invited, if the invitee has successfully signed up or not, organisation of the invitee and the email of the person who invited them
@@ -241,7 +242,7 @@ For security issues, kindly email us at security@apiwiz.com instead of posting a
 Join our growing community! Checkout out our official [Blog](https://www.apiwiz.io/resources/blogs). Follow us on [Twitter](https://twitter.com/getapiwiz), [Linkedin](https://www.linkedin.com/company/apiwizio/)
 
 
-## Thanks to all Contributors 🙏🏼
+### Thanks to all Contributors 🙏🏼
 <a href="https://github.com/apiwizlabs/wizdesk/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=apiwizlabs/wizdesk&max=400&columns=20" />
 <a>
