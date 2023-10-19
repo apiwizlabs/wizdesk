@@ -44,7 +44,8 @@ JWT_SECRET: "< place a randomly generated string (refer to the 5th point above) 
 AWS_ACCESSKEY: "< place the AWS Access Key ( refer to the 1st point above ) >"
 AWS_SECRET_KEY: "< place the AWS Secret Key ( refer to the 1st point above ) >"
 GOOGLE_CLIENT_ID: "< place the Google Client Id ( refer to the 3rd point above ) >"
-
+ADMIN_EMAIL: "<optionally you can add admin email in the env >"
+ADMIN_PASSWORD: "<optionally you can add admin email in the env >"
 ```
 
 Navigate to the `./config.js` and update the following variables accordingly
@@ -72,8 +73,38 @@ Navigate to the `./config.js` and update the following variables accordingly
 }
 ```
 
-This should start the server, database and populate dummy data in the database to get started.
+Insert a admin user document to your local db:
 
+generate a hashed password for the admin user and insert it as a value for the "password" key.  <br />
+Optionally you can save your admin user password in the config or .env file of your choice.
+
+```
+{
+  "_id": {
+    "$oid": "64114ad83d4089dedf268d44"
+  },
+  "name": "Admin",
+  "email": <dummy admin email of your choice>,
+  "password": <generated hashed password>,
+  "type": "ADMIN USER",
+  "lastLogin": {
+    "$date": "2023-07-11T09:51:59.075Z"
+  },
+  "cts": {
+    "$date": "2023-03-15T04:34:32.566Z"
+  },
+  "mts": {
+    "$date": "2023-07-11T09:51:59.075Z"
+  },
+  "__v": 0,
+  "isLocked": false,
+  "assignedOrganisations": [],
+  "isDeleted": false
+}
+```
+
+This should start the server, database and populate dummy data in the database to get started. <br />
+make sure to use the admin credentials set by you to login to wizdesk.
 
 
 
